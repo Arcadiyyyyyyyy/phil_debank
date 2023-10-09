@@ -1,0 +1,2 @@
+class DebankAPIError(Exception):
+    pass

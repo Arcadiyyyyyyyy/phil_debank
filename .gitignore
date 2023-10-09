@@ -1,0 +1,14 @@
+.idea
+*.env
+.vscode
+.vs
+*.log
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.pytest_cache
+*.py[cod]
+*$py.class
+*.coverage
+tg_bot/src/__pycache__
+tg_bot/__pycache__

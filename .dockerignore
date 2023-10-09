@@ -1,0 +1,13 @@
+# IntelliJ project files
+.idea
+.vscode
+.vs
+*.iml
+
+
+# dotenv environment variables file
+.env
+
+.git
+
+.DS_Store
