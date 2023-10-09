@@ -44,5 +44,7 @@ RUN poetry install --no-root --no-interaction --no-cache
 # Copy Application
 COPY . .
 
+WORKDIR ./telegram_bot
+
 #run the application
-CMD [ "poetry", "run", "python", "telegram_bot/bot"]
+CMD [ "poetry", "run", "python", "bot"]
