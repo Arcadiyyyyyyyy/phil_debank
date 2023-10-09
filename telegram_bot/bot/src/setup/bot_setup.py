@@ -2,7 +2,7 @@ from enum import Enum
 
 from telegram.ext import Application, CommandHandler
 
-from telegram_bot.bot.src.front_end.commands.top_reward import command_top_reward
+from bot.src.front_end.commands.top_reward import command_top_reward
 
 
 class Commands(Enum):

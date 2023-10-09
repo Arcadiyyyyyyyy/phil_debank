@@ -30,21 +30,20 @@ COPY --from=poetry-base ${POETRY_VENV} ${POETRY_VENV}
 ENV PATH="${PATH}:${POETRY_VENV}/bin"
 
 # Copy Dependencies
-COPY poetry.lock pyproject.toml ./telegram_bot/
+COPY poetry.lock pyproject.toml ./b/
 
 #set working directory
-WORKDIR /telegram_bot
+WORKDIR /b
 
 # [OPTIONAL] Validate the project is properly configured
 RUN poetry check
 
-# Install Dependencies with --no-root
-RUN poetry install --no-root --no-interaction --no-cache
-
 # Copy Application
 COPY . .
 
-WORKDIR ./telegram_bot
+# Install Dependencies with --no-root
+RUN poetry install
+
 
 #run the application
 CMD [ "poetry", "run", "python", "bot"]

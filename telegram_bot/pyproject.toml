@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "telegram_bot"
+name = "bot"
 version = "0.1.0"
 description = ""
 authors = ["Anton <109826223+Arcadiyyyyyyyy@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "telegram_bot"}]
+packages = [{include = "bot"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

@@ -1,4 +1,4 @@
-from telegram_bot.bot.src.exceptions.back_end.DebankAPI import DebankAPIError
+from bot.src.exceptions.back_end.DebankAPI import DebankAPIError
 import requests
 
 

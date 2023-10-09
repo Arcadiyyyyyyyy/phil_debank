@@ -10,6 +10,10 @@ env:
   IMAGE_NAME: debank_telegram_bot
   REGISTRY: ghcr.io
 
+defaults:
+  run:
+    working-directory: ./telegram_bot
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -2,8 +2,8 @@ from telegram import Update
 from telegram.constants import ParseMode
 from telegram.ext import CallbackContext
 
-from telegram_bot.bot.src.back_end.Debank import Debank
-from telegram_bot.bot.src.exceptions.back_end.DebankAPI import DebankAPIError
+from bot.src.back_end.Debank import Debank
+from bot.src.exceptions.back_end.DebankAPI import DebankAPIError
 
 
 async def command_top_reward(update: Update, context: CallbackContext):
